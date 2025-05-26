@@ -1,0 +1,18 @@
+/weapon/
+├── modules/
+│   ├── wireless/
+│   ├── exploitation/
+│   ├── access/
+│   ├── persistence/
+│   ├── obfuscation/
+│   └── navigation/
+├── core/
+│   ├── crypto/
+│   ├── loader/
+│   └── beacon/
+├── ui/
+│   └── cli.py
+├── build/
+├── configs/
+├── LICENSE
+├── README.md
