@@ -1,0 +1,17 @@
+[
+    {
+        "ip": "192.168.43.72",
+        "hostname": "corp-victim",
+        "os": "Windows 10",
+        "ports": [22, 80, 445],
+        "status": "reachable"
+    },
+    {
+        "ip": "192.168.43.101",
+        "hostname": "dev-linux",
+        "os": "Ubuntu 22.04",
+        "ports": [22, 443],
+        "status": "unreachable"
+    }
+]
+
