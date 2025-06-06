@@ -1,9 +1,11 @@
 # W.E.A.P.O.N.
 > **Wireless Exploitation Access Persistence Obfuscation & Navigation**
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/dc0fe0ae-af13-410c-85ca-f0d198d752ae" width="600" alt="W.E.A.P.O.N. logo">
+</p>
 
-![banner](https://fakeimg.pl/600x100/000000/ffffff/?text=W.E.A.P.O.N.&font=lobster)  
-**Author:** WebDragon63  
-**Purpose:** A modular Python-based red team framework for offensive operations.
+### 👤 Author: WebDragon63  
+### 🎯 Purpose: A modular Python-based red team framework for offensive operations.
 
 ---
 
@@ -65,5 +67,3 @@ python3 weapon.py modules
 This project is intended for educational and authorized penetration testing purposes only.
 Misuse of this tool can lead to criminal charges. You are solely responsible for your actions.
 
-📌 License
-Licensed under the MIT License.
