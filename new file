@@ -1,18 +1,52 @@
-/weapon/
-├── modules/
-│   ├── wireless/
-│   ├── exploitation/
-│   ├── access/
-│   ├── persistence/
-│   ├── obfuscation/
-│   └── navigation/
-├── core/
-│   ├── crypto/
-│   ├── loader/
-│   └── beacon/
-├── ui/
-│   └── cli.py
-├── build/
-├── configs/
-├── LICENSE
+W.E.A.P.O.N/
+├── beacon.py
+├── build
+│   └── payloads
+├── configs
+│   ├── c2_config.json
+│   ├── encryption.key
+│   ├── modules.json
+│   └── targets.json
+├── core
+│   ├── beacon
+│   │   └── beacon_creator.py
+│   ├── crypto
+│   │   ├── aes_crypto.py
+│   │   ├── chacha20_poly1305.py
+│   │   ├── keygen.py
+│   │   └── xor_encoder.py
+│   └── loader
+│       ├── exe_stub_loader.py
+│       ├── hta_loader.py
+│       ├── macro_generator.py
+│       ├── msbuild_loader.xml
+│       └── powershell_loader.py
+├── modules
+│   ├── access
+│   │   ├── access_tool.py
+│   │   └── __pycache__
+│   │       └── access_tool.cpython-311.pyc
+│   ├── exploitation
+│   │   ├── exploit_launcher.py
+│   │   ├── exploits
+│   │   │   ├── buffer_overflow_poc.py
+│   │   │   └── cve-2020-0796.py
+│   │   └── __pycache__
+│   │       └── exploit_launcher.cpython-311.pyc
+│   ├── navigation
+│   │   ├── nav_recon.py
+│   │   └── __pycache__
+│   │       └── nav_recon.cpython-311.pyc
+│   ├── obfuscation
+│   │   ├── obfuscator.py
+│   │   └── __pycache__
+│   │       └── obfuscator.cpython-311.pyc
+│   ├── persistence
+│   │   └── persist.py
+│   └── wireless
+│       └── wireless_tool.py
 ├── README.md
+├── requirements.txt
+├── ui
+│   └── cli.py
+└── weapon.py
