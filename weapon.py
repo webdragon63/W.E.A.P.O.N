@@ -3,7 +3,8 @@ import importlib
 import sys
 import os
 import json
-
+from colorama import Fore, Style, init
+print(f"\n{Fore.CYAN}")
 # Framework Banner
 BANNER = r"""
           _  _  _   _______   _______    _____     _____    __   _
@@ -40,9 +41,9 @@ TARGETS_PATH = "configs/targets.json"
 
 
 def list_modules():
-    print("\n[*] Available modules:\n")
+    print(f"\n{Fore.CYAN}[*] Available modules:{Fore.WHITE}\n")
     for name in sorted(MODULES.keys()):
-        print(f" - {name}")
+        print(f" {Fore.WHITE}- {Fore.MAGENTA}{name}")
     print()
 
 
@@ -50,27 +51,27 @@ def list_targets():
     try:
         with open(TARGETS_PATH, "r") as f:
             targets = json.load(f)
-        print("\n[*] Known Targets:")
+        print(f"\n{Fore.MAGENTA}[*] Known Targets:{Fore.YELLOW}")
         for target in targets:
-            print(f" - {target['ip']} ({target['os']})")
+            print(f" {Fore.WHITE}- {Fore.YELLOW}{target['ip']} ({target['os']})")
     except Exception as e:
-        print(f"[!] Failed to load targets.json: {e}")
+        print(f"{Fore.RED}[!] Failed to load targets.json: {Fore.WHITE}{e}")
 
 
 def list_config():
     try:
         with open(CONFIG_PATH, "r") as f:
             modules = json.load(f)
-        print("\n[*] Module Status:")
+        print(f"\n{Fore.MAGENTA}[*] Module Status:{Fore.WHITE}")
         for mod, status in modules.items():
-            print(f" - {mod}: {'enabled' if status else 'disabled'}")
+            print(f" {Fore.WHITE}- {Fore.MAGENTA}{mod}: {Fore.YELLOW}{'enabled' if status else 'disabled'}")
     except Exception as e:
-        print(f"[!] Error reading configuration: {e}")
+        print(f"{Fore.RED}[!] Error reading configuration: {Fore.WHITE}{module_name}{e}")
 
 
 def launch_module(module_name, args):
     if module_name not in MODULES:
-        print(f"[!] Unknown module: {module_name}")
+        print(f"{Fore.RED}[!] Unknown module: {Fore.WHITE}{module_name}")
         list_modules()
         return
 
@@ -80,9 +81,9 @@ def launch_module(module_name, args):
             sys.argv = [module_name] + args
             mod.main()
         else:
-            print(f"[!] Module '{module_name}' does not implement a main() function.")
+            print(f"{Fore.RED}[!] Module '{module_name}' does not implement a main() function.{Fore.WHITE}")
     except Exception as e:
-        print(f"[!] Error launching module '{module_name}': {e}")
+        print(f"{Fore.RED}[!] Error launching module '{module_name}': {module_name}{e}")
 
 
 def main():
@@ -92,7 +93,7 @@ def main():
     args = parser.parse_args()
 
     print(BANNER)
-
+    print (f"{Fore.WHITE}")
     if not args.module:
         list_modules()
         return
@@ -107,4 +108,3 @@ def main():
 
 if __name__ == "__main__":
     main()
-
