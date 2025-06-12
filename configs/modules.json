@@ -1,9 +1,0 @@
-{
-    "wireless": true,
-    "exploitation": true,
-    "persistence": true,
-    "obfuscation": false,
-    "navigation": true,
-    "access": true
-}
-

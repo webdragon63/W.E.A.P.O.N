@@ -1,7 +1,0 @@
-{
-    "c2_url": "http://127.0.0.1:5000",
-    "beacon_interval": 15,
-    "encryption": "ChaCha20-Poly1305",
-    "key_file": "configs/encryption.key"
-}
-
