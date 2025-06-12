@@ -1,52 +1,55 @@
-W.E.A.P.O.N/
-├── beacon.py
+W.E.A.P.O.N
 ├── build
-│   └── payloads
+│   └── beacon
+│       └── build.init
 ├── configs
-│   ├── c2_config.json
-│   ├── encryption.key
-│   ├── modules.json
-│   └── targets.json
+│   └── config.py
 ├── core
 │   ├── beacon
-│   │   └── beacon_creator.py
+│   │   ├── beacon_creator.py
+│   │   ├── crypter1.py
+│   │   ├── crypter2.py
+│   │   ├── process
+│   │   │   └── process.init
+│   │   └── src
+│   │       ├── base64_obf.py
+│   │       ├── brainfuck_enc.py
+│   │       ├── brainfuck_payload_builder.py
+│   │       ├── keygen.py
+│   │       ├── my_builder.py
+│   │       └── my_encoder.py
 │   ├── crypto
 │   │   ├── aes_crypto.py
 │   │   ├── chacha20_poly1305.py
 │   │   ├── keygen.py
 │   │   └── xor_encoder.py
-│   └── loader
-│       ├── exe_stub_loader.py
-│       ├── hta_loader.py
-│       ├── macro_generator.py
-│       ├── msbuild_loader.xml
-│       └── powershell_loader.py
+│   ├── loader
+│   │   ├── exe_stub_loader.py
+│   │   ├── hta_loader.py
+│   │   ├── macro_generator.py
+│   │   ├── msbuild_loader.xml
+│   │   └── powershell_loader.py
+│   └── module_manager.py
 ├── modules
 │   ├── access
-│   │   ├── access_tool.py
-│   │   └── __pycache__
-│   │       └── access_tool.cpython-311.pyc
+│   │   └── access_tool.py
 │   ├── exploitation
 │   │   ├── exploit_launcher.py
-│   │   ├── exploits
-│   │   │   ├── buffer_overflow_poc.py
-│   │   │   └── cve-2020-0796.py
-│   │   └── __pycache__
-│   │       └── exploit_launcher.cpython-311.pyc
+│   │   └── exploits
+│   │       ├── buffer_overflow_poc.py
+│   │       ├── cve-2020-0796.py
+│   │       └── http_rce_exploit.py
 │   ├── navigation
-│   │   ├── nav_recon.py
-│   │   └── __pycache__
-│   │       └── nav_recon.cpython-311.pyc
+│   │   └── nav_recon.py
 │   ├── obfuscation
-│   │   ├── obfuscator.py
-│   │   └── __pycache__
-│   │       └── obfuscator.cpython-311.pyc
+│   │   └── obfuscator.py
 │   ├── persistence
 │   │   └── persist.py
+│   ├── teamserver
+│   │   ├── c2_commands.py
+│   │   └── teamserver.py
 │   └── wireless
 │       └── wireless_tool.py
 ├── README.md
 ├── requirements.txt
-├── ui
-│   └── cli.py
-└── weapon.py
+└── weapon_gui.py
