@@ -1,4 +1,0 @@
-scapy
-argparse
-pycryptodome
-paramiko
