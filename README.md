@@ -41,7 +41,7 @@
 | Obfuscation   | `obfuscate`      | Encode, obfuscate, and disguise payloads    |
 | Navigation    | `navigation`     | OSINT, recon, port scans, etc.              |
 | Beacon        | `beacon`         | Generate beacon script or obfuscated beacon |
-| Crypto        | `aes`, `chacha`, `xor`, `keygen` | Encryption/decryption utilities |
+| Crypto        | `aes`, `chacha`, `xor` | Encryption/decryption utilities |
 | Loaders       | `loader_exe`, `loader_hta`, `loader_macro`, `loader_ps` | Payload delivery mechanisms |
 
 ---
