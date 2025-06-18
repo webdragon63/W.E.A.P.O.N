@@ -63,9 +63,9 @@ This project is intended for educational and authorized penetration testing purp
 Misuse of this tool can lead to criminal charges. You are solely responsible for your actions.
 
 ## If you want to donate for the project, you can :)
-##### Bitcoin(BTC) address: bc1qrgakys3xn64g74422m3v6avhd7as3hgejsqs7d
-##### Ethereum(ETH) address: 0x8CC47B3d6B820D7c72b2778d3D684b430ec6BF38
-##### Polygon(POL) address: 0x8CC47B3d6B820D7c72b2778d3D684b430ec6BF38
+##### Bitcoin(BTC) address: `bc1qrgakys3xn64g74422m3v6avhd7as3hgejsqs7d`
+##### Ethereum(ETH) address: `0x8CC47B3d6B820D7c72b2778d3D684b430ec6BF38`
+##### Polygon(POL) address: `0x8CC47B3d6B820D7c72b2778d3D684b430ec6BF38`
 
 ## Created by
 INDIAN CYBER ARMY >>(WebDragon63)
