@@ -1,9 +1,14 @@
-# W.E.A.P.O.N.
-> **Wireless Exploitation Access Persistence Obfuscation & Navigation**
+<h1 align="center" style="font-size:3em; letter-spacing:0.1em;">
+    Ｗ．Ｅ．Ａ．Ｐ．Ｏ．Ｎ
+</h1>
+<p align="center"><strong>Wireless Exploitation Access Persistence Obfuscation & Navigation</strong></p>
+
 <p align="center">
   <img src="https://github.com/user-attachments/assets/dc0fe0ae-af13-410c-85ca-f0d198d752ae" width="600" alt="W.E.A.P.O.N. logo">
 </p>
+
 > :warning: Early stage release
+
 ### 👤 Author: WebDragon63  
 ### 🎯 Purpose: A modular Python-based red team framework for offensive operations.
 
