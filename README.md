@@ -38,7 +38,7 @@
 | Wireless      | `wireless`       | Wireless scanning & injection               |
 | Exploitation  | `exploit`        | CVE and buffer overflow launcher            |
 | Persistence   | `persist`        | Add registry/cron persistence techniques    |
-| Obfuscation   | `obfuscate`      | Encode, obfuscate, and disguise payloads    |
+| Obfuscation   | `obfuscate`, `Dragon63 Encoder Lvl1`, `Dragon63 Encoder Lvl2`      | Encode, obfuscate, and disguise payloads    |
 | Navigation    | `navigation`     | OSINT, recon, port scans, etc.              |
 | Beacon        | `beacon`         | Generate beacon script or obfuscated beacon |
 | Crypto        | `aes`, `chacha`, `xor` | Encryption/decryption utilities |
