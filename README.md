@@ -56,7 +56,7 @@ pip install -r requirements.txt
 ```bash
 python3 weapon_gui.py
 ```
-![Screenshot at 2025-06-18 23-12-03](https://github.com/user-attachments/assets/37ae4195-81c2-4e3b-9813-3acdd00dc9fb)
+![Screenshot at 2025-06-19 00-12-20](https://github.com/user-attachments/assets/f11293e8-80c2-4838-b7fa-93b5f21edc6e)
 
 🛡 Disclaimer
 This project is intended for educational and authorized penetration testing purposes only.
