@@ -4,8 +4,12 @@
 <p align="center"><strong>Wireless Exploitation Access Persistence Obfuscation & Navigation</strong></p>
 
 <p align="center">
-  <img src="https://github.com/user-attachments/assets/dc0fe0ae-af13-410c-85ca-f0d198d752ae" width="600" alt="W.E.A.P.O.N. logo">
+  <img src="https://github.com/user-attachments/assets/dc0fe0ae-af13-410c-85ca-f0d198d752ae"
+       alt="Circular logo"
+       width="450"
+       style="border-radius:50%;">
 </p>
+
 
 > :warning: Early stage release
 
