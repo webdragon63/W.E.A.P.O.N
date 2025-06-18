@@ -87,35 +87,6 @@ def ftp_bruteforce(host, userlist, passlist):
     print("[!] No valid FTP credentials found.")
 
 
-# -----------------------------
-# Token/Password File Grabber
-# -----------------------------
-def grab_tokens():
-    print("[*] Searching for tokens/credentials in common locations...\n")
-    home = os.path.expanduser("~")
-    locations = [
-        ".bash_history", ".zsh_history", ".config/Code/User/settings.json",
-        ".config/google-chrome/Default/Login Data",
-        ".mozilla/firefox/profiles.ini", ".aws/credentials"
-    ]
-    for loc in locations:
-        path = os.path.join(home, loc)
-        if os.path.exists(path):
-            print(f"[+] Found: {path}")
-        else:
-            continue
-
-# -----------------------------
-# Session/User Enumerator
-# -----------------------------
-def enum_users():
-    print("[*] Current system users/sessions:\n")
-    try:
-        subprocess.run(["who"], check=True)
-        print("\n[*] Active login sessions:\n")
-        subprocess.run(["w"], check=True)
-    except Exception as e:
-        print(f"[!] Enumeration failed: {e}")
 
 # -----------------------------
 # Main CLI Logic
@@ -134,8 +105,6 @@ def main():
     ftp.add_argument("users")
     ftp.add_argument("passwords")
 
-    sub.add_parser("grab", help="Grab known token/credential files")
-    sub.add_parser("enum", help="Enumerate users/sessions")
 
     args = parser.parse_args()
 
@@ -143,13 +112,8 @@ def main():
         ssh_bruteforce(args.host, args.users, args.passwords)
     elif args.mode == "ftp":
         ftp_bruteforce(args.host, args.users, args.passwords)
-    elif args.mode == "grab":
-        grab_tokens()
-    elif args.mode == "enum":
-        enum_users()
     else:
         parser.print_help()
 
 if __name__ == "__main__":
     main()
-
