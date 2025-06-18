@@ -20,6 +20,7 @@
 - Navigation and recon
 - Beacon payload generation
 - Custom loader creation
+- Teamserver with interactive shell
 - Full encryption support
 
 
@@ -50,7 +51,7 @@ pip install -r requirements.txt
 ```bash
 python3 weapon_gui.py
 ```
-
+![Screenshot at 2025-06-18 23-12-03](https://github.com/user-attachments/assets/37ae4195-81c2-4e3b-9813-3acdd00dc9fb)
 
 🛡 Disclaimer
 This project is intended for educational and authorized penetration testing purposes only.
