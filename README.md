@@ -34,7 +34,7 @@
 
 | Category      | Command Name     | Description                                 |
 |---------------|------------------|---------------------------------------------|
-| Access        | `access`         | Local and remote access tools               |
+| Access        | `access`         | Local and remote access through ssh or ftp  |
 | Wireless      | `wireless`       | Wireless scanning & injection               |
 | Exploitation  | `exploit`        | CVE and buffer overflow launcher            |
 | Persistence   | `persist`        | Add registry/cron persistence techniques    |
