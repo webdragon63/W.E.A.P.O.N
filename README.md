@@ -14,7 +14,7 @@
 **W.E.A.P.O.N.** is a powerful red team toolkit that brings together essential capabilities for offensive security:
 - Wireless attacks
 - Exploitation modules (PoCs and CVEs)
-- Persistence tools
+- Persistence
 - Obfuscation engines
 - Credential and system access
 - Navigation and recon
@@ -46,24 +46,12 @@
 ```bash
 pip install -r requirements.txt
 ```
-### 2. Launch the framework in gui or cli
+### 2. Launch the framework
 ```bash
 python3 weapon_gui.py
-python3 weapon_cli.py
 ```
-## 3. Execute a module
-```bash
-python3 weapon.py exploit run smbghost 192.168.43.72
-```
-## 4. View available modules
-```bash
-python3 weapon.py
-```
-## 5. View targets and configs
-```bash
-python3 weapon.py targets
-python3 weapon.py modules
-```
+
+
 🛡 Disclaimer
 This project is intended for educational and authorized penetration testing purposes only.
 Misuse of this tool can lead to criminal charges. You are solely responsible for your actions.
