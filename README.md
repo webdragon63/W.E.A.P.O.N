@@ -3,7 +3,7 @@
 <p align="center">
   <img src="https://github.com/user-attachments/assets/dc0fe0ae-af13-410c-85ca-f0d198d752ae" width="600" alt="W.E.A.P.O.N. logo">
 </p>
-
+> :warning: Early stage release
 ### 👤 Author: WebDragon63  
 ### 🎯 Purpose: A modular Python-based red team framework for offensive operations.
 
