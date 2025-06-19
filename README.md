@@ -40,7 +40,7 @@
 | Access Tools       | `Access Tool`         | Local and remote access through ssh or ftp (Under Develpoment)  |
 | Wireless Tools     | `Wireless Scanner`       | Wireless scanning & injection               |
 | Exploitation  | `Exploit Launcher`        | CVE and buffer overflow launcher (Under Development)           |
-| Persistence   | `persist`        | Add registry/cron persistence techniques    |
+| Persistence   | `persist`        | Add registry/cron persistence techniques (`Uploadable through Beacon.py into target systems`)    |
 | Obfuscation   | `Dragon63 Encoder Lvl1`, `Dragon63 Encoder Lvl2`      | Encode, obfuscate, and disguise payloads    |
 | Reconnaissance    | `Navigation Recon`     | OSINT, recon, port scans, etc. (Under Development)             |
 | Beacons        | `Python Stageless Beacon for Windows`, `Python Stageless Beacon for Linux`        | Generate beacon script or obfuscated beacon |
