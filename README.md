@@ -26,7 +26,7 @@
 - Obfuscation engines
 - Credential and system access
 - Navigation and recon
-- Beacon payload generation
+- Python stageless beacon and payload generation
 - Custom loader creation
 - Teamserver with interactive shell
 - Full encryption support
@@ -43,7 +43,7 @@
 | Persistence   | `persist`        | Add registry/cron persistence techniques    |
 | Obfuscation   | `obfuscate`, `Dragon63 Encoder Lvl1`, `Dragon63 Encoder Lvl2`      | Encode, obfuscate, and disguise payloads    |
 | Navigation    | `navigation`     | OSINT, recon, port scans, etc. (Under Development)             |
-| Beacon        | `beacon`         | Generate beacon script or obfuscated beacon |
+| Beacon        | `Python Stageless Beacon for Windows`, `Python Stageless Beacon for Linux`        | Generate beacon script or obfuscated beacon |
 | Crypto        | `aes`, `chacha`, `xor` | Encryption/decryption utilities |
 | Loaders       | `loader_exe`, `loader_hta`, `loader_macro`, `loader_ps` | Payload delivery mechanisms |
 
