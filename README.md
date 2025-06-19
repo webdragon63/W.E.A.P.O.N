@@ -10,7 +10,7 @@
        style="border-radius:50%;">
 </p>
 
-> :warning: Early stage release
+> :warning: Early stage release. Implementation of new featueres is on the way.
 
 ### 👤 Author: WebDragon63  
 ### 🎯 Purpose: A modular Python-based red team framework for offensive operations.
