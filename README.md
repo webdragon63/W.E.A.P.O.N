@@ -44,7 +44,7 @@
 | Obfuscation   | `obfuscate`, `Dragon63 Encoder Lvl1`, `Dragon63 Encoder Lvl2`      | Encode, obfuscate, and disguise payloads    |
 | Navigation    | `navigation`     | OSINT, recon, port scans, etc. (Under Development)             |
 | Beacon        | `Python Stageless Beacon for Windows`, `Python Stageless Beacon for Linux`        | Generate beacon script or obfuscated beacon |
-| Crypto        | `aes`, `chacha`, `xor` | Encryption/decryption utilities |
+| Crypto        | `aes_256_cbc`, `chacha20-poly1305`, `xor_encoder` | Encryption/decryption utilities |
 | Loaders       | `loader_exe`, `loader_hta`, `loader_macro`, `loader_ps` | Payload delivery mechanisms |
 
 ---
