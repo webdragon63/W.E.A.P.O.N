@@ -37,15 +37,15 @@
 
 | Category      | Module     | Description                                 |
 |---------------|------------------|---------------------------------------------|
-| Access        | `access`         | Local and remote access through ssh or ftp (Under Develpoment)  |
-| Wireless      | `wireless`       | Wireless scanning & injection               |
-| Exploitation  | `exploit`        | CVE and buffer overflow launcher (Under Development)           |
+| Access Tools       | `Access Tool`         | Local and remote access through ssh or ftp (Under Develpoment)  |
+| Wireless Tools     | `Wireless Scanner`       | Wireless scanning & injection               |
+| Exploitation  | `Exploit Launcher`        | CVE and buffer overflow launcher (Under Development)           |
 | Persistence   | `persist`        | Add registry/cron persistence techniques    |
-| Obfuscation   | `obfuscate`, `Dragon63 Encoder Lvl1`, `Dragon63 Encoder Lvl2`      | Encode, obfuscate, and disguise payloads    |
-| Navigation    | `navigation`     | OSINT, recon, port scans, etc. (Under Development)             |
-| Beacon        | `Python Stageless Beacon for Windows`, `Python Stageless Beacon for Linux`        | Generate beacon script or obfuscated beacon |
+| Obfuscation   | `Dragon63 Encoder Lvl1`, `Dragon63 Encoder Lvl2`      | Encode, obfuscate, and disguise payloads    |
+| Reconnaissance    | `Navigation Recon`     | OSINT, recon, port scans, etc. (Under Development)             |
+| Beacons        | `Python Stageless Beacon for Windows`, `Python Stageless Beacon for Linux`        | Generate beacon script or obfuscated beacon |
 | Crypto        | `aes_256_cbc`, `chacha20-poly1305`, `xor_encoder` | Encryption/decryption utilities |
-| Loaders       | `loader_exe`, `loader_hta`, `loader_macro`, `loader_ps` | Payload delivery mechanisms |
+| Loaders       | `EXE Loader`, `HTA Loader`, `Macro Generator`, `Powershell Loader` | Payload delivery mechanisms |
 
 ---
 
