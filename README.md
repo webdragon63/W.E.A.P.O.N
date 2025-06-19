@@ -35,7 +35,7 @@
 
 ## 🧠 Modules
 
-| Category      | Command Name     | Description                                 |
+| Category      | Module     | Description                                 |
 |---------------|------------------|---------------------------------------------|
 | Access        | `access`         | Local and remote access through ssh or ftp (Under Develpoment)  |
 | Wireless      | `wireless`       | Wireless scanning & injection               |
