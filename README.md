@@ -10,7 +10,7 @@
        style="border-radius:50%;">
 </p>
 
-> :warning: Early stage release. Implementation of new featueres is on the way.
+> :warning: Early stage release. New featueres implementation is on the way.
 
 ### 👤 Author: WebDragon63  
 ### 🎯 Purpose: A modular Python-based red team framework for offensive operations.
@@ -37,9 +37,9 @@
 
 | Category      | Command Name     | Description                                 |
 |---------------|------------------|---------------------------------------------|
-| Access        | `access`         | Local and remote access through ssh or ftp  |
+| Access        | `access`         | Local and remote access through ssh or ftp (Under Develpoment)  |
 | Wireless      | `wireless`       | Wireless scanning & injection               |
-| Exploitation  | `exploit`        | CVE and buffer overflow launcher            |
+| Exploitation  | `exploit`        | CVE and buffer overflow launcher (Under Development)           |
 | Persistence   | `persist`        | Add registry/cron persistence techniques    |
 | Obfuscation   | `obfuscate`, `Dragon63 Encoder Lvl1`, `Dragon63 Encoder Lvl2`      | Encode, obfuscate, and disguise payloads    |
 | Navigation    | `navigation`     | OSINT, recon, port scans, etc.              |
