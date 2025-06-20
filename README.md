@@ -69,7 +69,7 @@ Misuse of this tool can lead to criminal charges. You are solely responsible for
 ##### Bitcoin(BTC) address: `bc1qrgakys3xn64g74422m3v6avhd7as3hgejsqs7d`
 ##### Ethereum(ETH) address: `0x8CC47B3d6B820D7c72b2778d3D684b430ec6BF38`
 ##### Polygon(POL) address: `0x8CC47B3d6B820D7c72b2778d3D684b430ec6BF38`
-
+##### BNB smart chain(BNB): `0x8CC47B3d6B820D7c72b2778d3D684b430ec6BF38`
 ## Created by
 INDIAN CYBER ARMY >>(WebDragon63)
 YT CHANNEL: [INDIAN CYBER ARMY](https://www.youtube.com/@webdragon63)
