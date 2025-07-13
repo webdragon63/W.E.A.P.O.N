@@ -28,6 +28,7 @@ MODULES = {
     "Beacons": {
         "Python Stageless Beacon for Linux":       "core.beacon.beacon_creator_lin",
         "Python Stageless Beacon for Windows":     "core.beacon.beacon_creator_win",
+        "Powershell Stageless Beacon":             "core.beacon.powershell_beacon_creator",
     },
     "Crypto": {
         "AES_256_CBC":            "core.crypto.aes_crypto",
