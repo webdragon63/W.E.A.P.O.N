@@ -43,7 +43,7 @@
 | Persistence   | `persist.py`        | Add registry/cron persistence techniques (`Uploadable through Beacon.py into target systems`)    |
 | Obfuscation   | `Dragon63 Encoder Lvl1`, `Dragon63 Encoder Lvl2`      | Encode, obfuscate, and disguise payloads    |
 | Reconnaissance    | `Navigation Recon`     | OSINT, recon, port scans, etc. (Under Development)             |
-| Beacons        | `Python Stageless Beacon for Windows`, `Python Stageless Beacon for Linux`        | Generate beacon script or obfuscated beacon |
+| Beacons        | `Python Stageless Beacon for Windows`, `Python Stageless Beacon for Linux`, `Powershell Stageless Beacon`        | Generate beacon script or obfuscated beacon |
 | Crypto        | `AES_256_CBC`, `ChaCha20-Poly1305`, `XOR Encoder` | Encryption/decryption utilities |
 | Loaders       | `EXE Loader`, `HTA Loader`, `Macro Generator`, `Powershell Loader` | Payload delivery mechanisms |
 
